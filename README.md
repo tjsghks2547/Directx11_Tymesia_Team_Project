@@ -30,6 +30,7 @@ DirectX 11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 �
 - PhysX 라이브러리를 사용해 게임 내 모든 충돌 처리 구현
   - Collision Enter / Stay / Exit 함수를 연결하여 해당 Object의 충돌 상태 확인
   - 충돌체 레이어를 활용하여 최적화
+  - 충돌 지점의 법선벡터를 통한 상호작용 구현
 
 - 다양한 셰이더 구현
   - Zoom Blur / Color Inversion Shader / Dissolve / Glow
@@ -44,4 +45,5 @@ DirectX 11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 �
 - 애니메이션
    - 애니메이션 툴 ( 속도 및 보간 )
    - 루트 애니메이션
+   - 애니메이션 역재생 
 
