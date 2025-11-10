@@ -2,7 +2,8 @@
 DirectX9을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기능들의 샘플 코드입니다.
 
 <div align="center">
-  <img width="400" alt="오구와 비밀의 숲 사진" src="https://github.com/user-attachments/assets/96b47d6c-e8de-44b5-bede-8f931ac9b036" />
+  <img width="400" alt="티메시아 사진" src="<img width="460" height="215" alt="image" src="https://github.com/user-attachments/assets/7e2d816e-2f3a-48f3-b5b0-b226a52ca77d" />
+" />
  /> <br><br>
   개발기간 : 2개월 <br><br>
   📌해당 설명서는 팀원 개개인이 개별적으로 작성하기에 팀원 모두의 구현 내용을 담은 것이 아닙니다. <br><br>
