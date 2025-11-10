@@ -25,8 +25,8 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 - C++
 - ImGui
 - PhysX Library
-- Assimp Libraryhttps://github.com/tjsghks2547/Directx11_Tymesia_Team_Project/issues
-  
+- Assimp Library
+- HLSL
 
 # 💻구현 컨텐츠 및 기능 설명 
 
@@ -36,6 +36,8 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
    - 애니메이션 역재생
    - 애니메이션 키 프레임 구간 속도 조절 기능
    - 애니메이션 프레임 단위로 사운드, 이펙트, 충돌 등의 이벤트를 자동 트리거하는 프레임 기반 이벤트 시스템을 구현.
+  <br><br>
+  ![Image](https://github.com/user-attachments/assets/4c20bdcb-09ec-494c-821e-5d9cfdcc3564)
      
 
 - PhysX 라이브러리를 사용해 게임 내 모든 충돌 처리 구현
