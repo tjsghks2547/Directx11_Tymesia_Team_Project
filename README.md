@@ -1,13 +1,12 @@
-# 오구와 비밀의 숲 모작 Team_Project
-DirectX9을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기능들의 샘플 코드입니다.
+# Directx11 Tymesia 모작 Team_Project
+DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기능들의 샘플 코드입니다.
 
 <div align="center">
   <img width="400" alt="티메시아 사진" src="https://github.com/user-attachments/assets/4d6fc8db-fb7b-412a-9eaa-a48bc1068624" />
-" />
- /> <br><br>
+  <br><br>
   개발기간 : 2개월 <br><br>
   📌해당 설명서는 팀원 개개인이 개별적으로 작성하기에 팀원 모두의 구현 내용을 담은 것이 아닙니다. <br><br>
-    작업기간 :  2024.08.13 ~ 2025.10.14
+    작업기간 :  2025.02.12 ~ 2025.4.13
 </div>
 
 # 동영상
