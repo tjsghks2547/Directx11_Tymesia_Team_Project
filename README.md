@@ -13,29 +13,41 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 [https://youtu.be/_r2ZWqVJgvA]
 
 # 👩‍💻담당 파트
-- 김선환 : 2D 스프라이트 애니메이션, Map Tool, 보스 몬스터(뱀장어), Level 전환, 충돌 및 조명 처리
-- 강동영 : 플레이어 ,카메라, 몬스터 
-- 안주헌 : 오브젝트 기믹 및 트리거  
-- 봉민지 : UI, 보스 몬스터
-
+- 김선환 : 플레이어, 카메라, 컷신 애니메이션 툴, 애니메이션, 엣지 네비게이션, 셰이더, 춛돌
+- 강범승 : 몬스터 , Ai
+- 이상혁 : Map Tool , 환경 셰이더 
+- 한유인 : Map Tool,  맵 이동 및 상호작용 
+- 김유빈 : UI , Item
+- 이종한 : 이펙트 , 이펙트 툴 , 이펙트 셰이더
+  
 # 📖기술 스택 및 개발 환경
 - DirectX9 SDK
 - C++
 - ImGui
+- PhysX Library
+- Assimp Library
+  
 
 # 💻구현 컨텐츠 및 기능 설명 
-- DirectXMath 라이브러리를 사용해 게임 내 모든 충돌 처리 구현
+
+- 애니메이션
+   - 애니메이션 툴 ( 속도 및 보간 )
+   - 루트 애니메이션
+   - 애니메이션 역재생
+   - 애니메이션 프레임 이벤트 
+
+- PhysX 라이브러리를 사용해 게임 내 모든 충돌 처리 구현
   - Collision Enter / Stay / Exit 함수를 연결하여 해당 Object의 충돌 상태 확인
   - 충돌체 레이어를 활용하여 최적화
 
-![Image](https://github.com/user-attachments/assets/b00b6c60-c7c8-4e54-a02a-f62cb2ab09bb)
+- 다양한 셰이더 구현
+  - Zoom Blur / Color Inversion Shader / Dissolve / Glow
 
-- Map Tool
-  - Mouse Picking을 통한 오브젝트 설치 및 맵 구성 정보 binary화 저장. 
+- 플레이어 상태 디자인 패턴을 통한 컨트롤 구현
 
-- 2D Sprite 애니메이션
-  - UV 좌표 계산을 통한 이미지 편집 및 애니메이션 속도, 애니메이션 반복 옵션 기능 구현
+- 카메라 연출
+  - 카메라 툴 ( slerp 및 Cat-MullRom을 활용함) 
+  - Perlin Noise 를 이용한 Camera Shake 기능
+  - Zoom In / Zoom Out
  
-- 조명
-  - DirectX9 Spotlight 광원을 이용한 동굴 내부 분위기 구현
 
