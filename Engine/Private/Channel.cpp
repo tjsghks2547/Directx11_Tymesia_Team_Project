@@ -103,9 +103,6 @@ void CChannel::Update_TransformationMatrix(_float fCurrentTrackPosition, _uint* 
 
      _matrix TransformationMatrix = XMMatrixAffineTransformation(vScale, XMVectorSet(0.f, 0.f, 0.f, 1.f), vRotation, vTranslation);
      Bones[m_iBoneIndex]->Set_TransformationMatrix(TransformationMatrix);
-
- 
-
 }
 
 void CChannel::Update_Reverse_TransformationMatrix(_float fCurrentTrackPosition, _uint* pCurrentKeyFrameIndex, const vector<class CBone*>& Bones)
@@ -150,16 +147,13 @@ void CChannel::Update_Reverse_TransformationMatrix(_float fCurrentTrackPosition,
 
 void CChannel::Lerp_TransformationMatrix(const vector<class CBone*>& Bones, CChannel* pNextChannel, _float LerpTime, _float LerpTimeAcc, _uint* pCurrentKeyFrameIndex)
 {
-    /* 11월 29일 여기서 부터 다시 하기 */
     _vector   vScale, vRotation, vTranslation;
 
     _float		fRatio = LerpTimeAcc / LerpTime;        
    
     /* 선형보간*/
-    /* 여기서 작업해줘야할듯함 */
-    /* 현재 위치의 애니메이션 가져와줘야할듯*/
-
-      // 현재 위치와 다음 위치의 차이 계산
+  
+    // 현재 위치와 다음 위치의 차이 계산
    
     vScale       = XMVectorLerp(XMLoadFloat3(&m_Keyframes[*pCurrentKeyFrameIndex].vScale), XMLoadFloat3(&pNextChannel->m_Keyframes.front().vScale), fRatio);
     vRotation    = XMQuaternionSlerp(XMLoadFloat4(&m_Keyframes[*pCurrentKeyFrameIndex].vRotation), XMLoadFloat4(&pNextChannel->m_Keyframes.front().vRotation), fRatio);    
@@ -167,16 +161,8 @@ void CChannel::Lerp_TransformationMatrix(const vector<class CBone*>& Bones, CCha
     vTranslation = XMVectorSetW(vTranslation, 1.f); 
 
 
-    //if(m_iBoneIndex==2)
-    //{
-    //    vTranslation = { 0.f,0.f,0.f,1.f }; 
-    //
-    //}
-
     _matrix  TransformationMatrix = XMMatrixAffineTransformation(vScale, XMVectorSet(0.f, 0.f, 0.f, 1.f), vRotation, vTranslation);
     Bones[m_iBoneIndex]->Set_TransformationMatrix(TransformationMatrix);
-
-
 }
 
 void CChannel::Lerp_Reverse_TransformationMatrix(const vector<class CBone*>& Bones, CChannel* pNextChannel, _float LerpTime, _float LerpTimeAcc, _uint* pCurrentKeyFrameIndex)

@@ -1,0 +1,148 @@
+﻿  Effect.cpp
+  Item.cpp
+  Monster.cpp
+  Monster_Manager.cpp
+  Projectile.cpp
+  Projectile_Manager.cpp
+  UI_Button.cpp
+  UI_Image.cpp
+  UI_Manager.cpp
+  VIBuffer_Point_Compute.cpp
+  Bone.cpp
+  Camera.cpp
+  Cell.cpp
+  Component.cpp
+  ContainerObject.cpp
+  Edge_Cell.cpp
+  EffectMgr.cpp
+  EventMgr.cpp
+  Frustum.cpp
+  GameInstance.cpp
+  GameObject.cpp
+  ItemMgr.cpp
+  Layer.cpp
+  Level.cpp
+  Level_Manager.cpp
+  Navigation.cpp
+  Object_Manager.cpp
+  PhysX_Manager.cpp
+  PhysX_SimulationEventCallBack.cpp
+  Prototype_Manager.cpp
+  Renderer.cpp
+  Shadow.cpp
+  Transform.cpp
+  UIObject.cpp
+  VIBuffer_Effect_Rect_Instancing.cpp
+  VIBuffer_Mesh_Instancing.cpp
+  VIBuffer_Point_Instancing.cpp
+  VIBuffer_Rect_Instancing.cpp
+     ..\Bin\Release\Engine_R.lib 라이브러리 및 ..\Bin\Release\Engine_R.exp 개체를 생성하고 있습니다.
+  코드를 생성하고 있습니다.
+  6 of 8225 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+Effects11.lib(EffectAPI.obj) : warning LNK4099: '' PDB를 'Effects11.lib(EffectAPI.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11.lib(EffectNonRuntime.obj) : warning LNK4099: '' PDB를 'Effects11.lib(EffectNonRuntime.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11.lib(EffectLoad.obj) : warning LNK4099: '' PDB를 'Effects11.lib(EffectLoad.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11.lib(d3dxGlobal.obj) : warning LNK4099: '' PDB를 'Effects11.lib(d3dxGlobal.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11.lib(EffectReflection.obj) : warning LNK4099: '' PDB를 'Effects11.lib(EffectReflection.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11.lib(EffectRuntime.obj) : warning LNK4099: '' PDB를 'Effects11.lib(EffectRuntime.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(SpriteBatch.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(SpriteBatch.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(SpriteFont.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(SpriteFont.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(PrimitiveBatch.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(PrimitiveBatch.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(WICTextureLoader.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(WICTextureLoader.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(DDSTextureLoader.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(DDSTextureLoader.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(VertexTypes.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(VertexTypes.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(BasicEffect.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(BasicEffect.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(CommonStates.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(CommonStates.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(pch.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(pch.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(BinaryReader.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(BinaryReader.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK.lib(EffectCommon.obj) : warning LNK4099: '' PDB를 'DirectXTK.lib(EffectCommon.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXExtensions_static_64_R.lib(ExtDefaultErrorCallback.obj) : warning LNK4099: '' PDB를 'PhysXExtensions_static_64_R.lib(ExtDefaultErrorCallback.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXExtensions_static_64_R.lib(ExtDefaultCpuDispatcher.obj) : warning LNK4099: '' PDB를 'PhysXExtensions_static_64_R.lib(ExtDefaultCpuDispatcher.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXExtensions_static_64_R.lib(ExtSimpleFactory.obj) : warning LNK4099: '' PDB를 'PhysXExtensions_static_64_R.lib(ExtSimpleFactory.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXExtensions_static_64_R.lib(ExtCpuWorkerThread.obj) : warning LNK4099: '' PDB를 'PhysXExtensions_static_64_R.lib(ExtCpuWorkerThread.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXExtensions_static_64_R.lib(ExtRigidBodyExt.obj) : warning LNK4099: '' PDB를 'PhysXExtensions_static_64_R.lib(ExtRigidBodyExt.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXExtensions_static_64_R.lib(ExtConvexCoreExt.obj) : warning LNK4099: '' PDB를 'PhysXExtensions_static_64_R.lib(ExtConvexCoreExt.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvd.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvd.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvdImpl.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvdImpl.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvdDataStream.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvdDataStream.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvdObjectModelMetaData.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvdObjectModelMetaData.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvdObjectRegistrar.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvdObjectRegistrar.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvdMemClient.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvdMemClient.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxProfileEventImpl.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxProfileEventImpl.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+PhysXPvdSDK_static_64_R.lib(PxPvdProfileZoneClient.obj) : warning LNK4099: '' PDB를 'PhysXPvdSDK_static_64_R.lib(PxPvdProfileZoneClient.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexD3D11.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexD3D11.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexDDS.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexDDS.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexImage.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexImage.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexUtil.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexUtil.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexConvert.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexConvert.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexMipMaps.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexMipMaps.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(DirectXTexCompress.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(DirectXTexCompress.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(BC.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(BC.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(BC4BC5.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(BC4BC5.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_Release.lib(BC6HBC7.obj) : warning LNK4099: '' PDB를 'DirectXTex_Release.lib(BC6HBC7.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+  Engine.vcxproj -> C:\Users\tjsgh\Desktop\really_fianl\Engine\Bin\Release\Engine_R.dll
+  .\Engine\Public\Animation.h
+  .\Engine\Public\Base.h
+  공유 위반입니다.
+  .\Engine\Bin\Release\Engine_R.dll
+  1개 파일이 복사되었습니다.
+  .\Engine\Bin\Release\Engine_R.lib
+  1개 파일이 복사되었습니다.
+  .\Engine\ThirdPartyLib\assimp-vc140-mt.lib
+  .\Engine\ThirdPartyLib\assimp-vc140-mtd.lib
+  .\Engine\ThirdPartyLib\assimp-vc143-mt.lib
+  .\Engine\ThirdPartyLib\assimp-vc143-mtd.lib
+  .\Engine\ThirdPartyLib\DirectXTex.lib
+  .\Engine\ThirdPartyLib\DirectXTex_Release.lib
+  .\Engine\ThirdPartyLib\DirectXTK.lib
+  .\Engine\ThirdPartyLib\DirectXTKd.lib
+  .\Engine\ThirdPartyLib\Effects11.lib
+  .\Engine\ThirdPartyLib\Effects11d.lib
+  .\Engine\ThirdPartyLib\fmodex_vc.lib
+  .\Engine\ThirdPartyLib\fmodL_vc.lib
+  .\Engine\ThirdPartyLib\fmod_vc.lib
+  .\Engine\ThirdPartyLib\LowLevelAABB_static_64.lib
+  .\Engine\ThirdPartyLib\LowLevelAABB_static_64_R.lib
+  .\Engine\ThirdPartyLib\LowLevelDynamics_static_64.lib
+  .\Engine\ThirdPartyLib\LowLevelDynamics_static_64_R.lib
+  .\Engine\ThirdPartyLib\LowLevel_static_64.lib
+  .\Engine\ThirdPartyLib\LowLevel_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXCharacterKinematic_static_64.lib
+  .\Engine\ThirdPartyLib\PhysXCharacterKinematic_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXCommon_64.lib
+  .\Engine\ThirdPartyLib\PhysXCommon_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXCooking_64.lib
+  .\Engine\ThirdPartyLib\PhysXCooking_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXExtensions_static_64.lib
+  .\Engine\ThirdPartyLib\PhysXExtensions_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXFoundation_64.lib
+  .\Engine\ThirdPartyLib\PhysXFoundation_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXPvdSDK_static_64.lib
+  .\Engine\ThirdPartyLib\PhysXPvdSDK_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXTask_static_64.lib
+  .\Engine\ThirdPartyLib\PhysXTask_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXVehicle2_static_64.lib
+  .\Engine\ThirdPartyLib\PhysXVehicle2_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysXVehicle_static_64.lib
+  .\Engine\ThirdPartyLib\PhysXVehicle_static_64_R.lib
+  .\Engine\ThirdPartyLib\PhysX_64.lib
+  .\Engine\ThirdPartyLib\PhysX_64_R.lib
+  .\Engine\ThirdPartyLib\PVDRuntime_64.lib
+  .\Engine\ThirdPartyLib\SceneQuery_static_64.lib
+  .\Engine\ThirdPartyLib\SceneQuery_static_64_R.lib
+  .\Engine\ThirdPartyLib\SimulationController_static_64.lib
+  .\Engine\ThirdPartyLib\SimulationController_static_64_R.lib
+  .\Engine\ThirdPartyLib\SnippetRender_static_64.lib
+  .\Engine\ThirdPartyLib\SnippetUtils_static_64.lib
+  46개 파일이 복사되었습니다.
+  .\Engine\Bin\ShaderFiles\Engine_Shader_Defines.hlsli
+  .\Engine\Bin\ShaderFiles\Shader_Cell.hlsl
+  .\Engine\Bin\ShaderFiles\Shader_Compute.hlsl
+  .\Engine\Bin\ShaderFiles\Shader_Compute_Fog.hlsl
+  .\Engine\Bin\ShaderFiles\Shader_Compute_Sample.hlsl
+  .\Engine\Bin\ShaderFiles\Shader_Deferred.hlsl
+  .\Engine\Bin\ShaderFiles\Shader_Shadow.hlsl
+  7개 파일이 복사되었습니다.

@@ -1283,7 +1283,7 @@ HRESULT CPlayer::Ready_PartObjects(void* _pArg)
 	m_pModel = dynamic_cast<CModel*>(Find_PartObject_Component(TEXT("Part_Body"), TEXT("Com_Model")));
 
 
-	/* 오른손 무기를 만든다. */
+	/* 오른손 무기 */
 	CRightWeapon::WEAPON_DESC		RightWeaponDesc{};
 
 	CModel* pBodyModelCom = dynamic_cast<CModel*>(__super::Find_PartObject_Component(TEXT("Part_Body"), TEXT("Com_Model")));
