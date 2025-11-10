@@ -52,6 +52,6 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
   - Perlin Noise 를 이용한 Camera Shake 기능
   - Zoom In / Zoom Out
     
-  - Lock On Camera
+  - Lock On Camera <br><br>
   ![Image](https://github.com/user-attachments/assets/b00b6c60-c7c8-4e54-a02a-f62cb2ab09bb)
 
