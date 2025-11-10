@@ -28,6 +28,8 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
   - Collision Enter / Stay / Exit 함수를 연결하여 해당 Object의 충돌 상태 확인
   - 충돌체 레이어를 활용하여 최적화
 
+![Image](https://github.com/user-attachments/assets/b00b6c60-c7c8-4e54-a02a-f62cb2ab09bb)
+
 - Map Tool
   - Mouse Picking을 통한 오브젝트 설치 및 맵 구성 정보 binary화 저장. 
 
