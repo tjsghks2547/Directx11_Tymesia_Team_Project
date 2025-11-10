@@ -2,7 +2,7 @@
 DirectX9을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기능들의 샘플 코드입니다.
 
 <div align="center">
-  <img width="400" alt="티메시아 사진" src="<img width="460" height="215" alt="image" src="https://github.com/user-attachments/assets/7e2d816e-2f3a-48f3-b5b0-b226a52ca77d" />
+  <img width="400" alt="티메시아 사진" src="https://github.com/user-attachments/assets/4d6fc8db-fb7b-412a-9eaa-a48bc1068624" />
 " />
  /> <br><br>
   개발기간 : 2개월 <br><br>
