@@ -25,7 +25,7 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 - C++
 - ImGui
 - PhysX Library
-- Assimp Library
+- Assimp Libraryhttps://github.com/tjsghks2547/Directx11_Tymesia_Team_Project/issues
   
 
 # 💻구현 컨텐츠 및 기능 설명 
@@ -34,6 +34,7 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
    - 애니메이션 툴 ( 애니메이션 속도 및 보간 속도, 시작 프레임위치, 끝나는 프레임 위치등을 설정 )
    - 루트 애니메이션
    - 애니메이션 역재생
+   - 애니메이션 키 프레임 구간 속도 조절 기능
    - 애니메이션 프레임 단위로 사운드, 이펙트, 충돌 등의 이벤트를 자동 트리거하는 프레임 기반 이벤트 시스템을 구현.
      
 
