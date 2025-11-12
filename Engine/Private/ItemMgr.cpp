@@ -145,7 +145,7 @@ void CItemMgr::Clear_ItemInfo()
 
     // map<ITEM_TYPE, pair<_uint, vector<CItem*>>>
     // map 의 second 가 pair 가 되고... pair의 first 가 갯수 자나 얘도 초기화.. 0개로. Pair 가 m_mapItems. 
-    // map 은 second 의 second 가 pair 의 second 니까. vector<CItem> 이니까.. 얘 클리어 해서 비워q버림;;
+    // map 은 second 의 second 가 pair 의 second 니까. vector<CItem> 이니까.. 얘 클리어 해서 비워버림
     for (auto& Pair : m_mapItems)
     {
         ITEM_TYPE eItemType = Pair.first;
