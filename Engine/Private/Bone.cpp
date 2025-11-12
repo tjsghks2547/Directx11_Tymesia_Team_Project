@@ -9,29 +9,29 @@ CBone::CBone()
 
 HRESULT CBone::Initialize(const aiNode* pAINode, _int iParentBoneIndex)
 {
-	strcpy_s(m_szName, pAINode->mName.data); /* data¸¦ ºÙ¿©ÁØ ÀÌÀ¯´Â char·Î ¹İÈ¯ÇØÁÖ±â ¶§¹®¿¡ data¸¦ ºÙ¿©ÁÜ*/
+	strcpy_s(m_szName, pAINode->mName.data); /* dataë¥¼ ë¶™ì—¬ì¤€ ì´ìœ ëŠ” charë¡œ ë°˜í™˜í•´ì£¼ê¸° ë•Œë¬¸ì— dataë¥¼ ë¶™ì—¬ì¤Œ*/
 
 
-	/*pAINode->mTransformation**Àº ÇØ´ç ³ëµåÀÇ ·ÎÄÃ º¯È¯ Çà·Ä*/
-	/*Áö±İ ¹Ş¾Æ¿À´Â ³ëµå´Â ·çÆ®³ëµå¶ó¼­ ´ÜÀ§Çà·ÄÀÌ ¸ÂÀ½ (¿Ö³ÄÇÏ¸é ·çÆ®³ëµåÀÇ ºÎ¸ğ°¡ ¾øÀ¸´Ï±ñ) */
+	/*pAINode->mTransformation**ì€ í•´ë‹¹ ë…¸ë“œì˜ ë¡œì»¬ ë³€í™˜ í–‰ë ¬*/
+	/*ì§€ê¸ˆ ë°›ì•„ì˜¤ëŠ” ë…¸ë“œëŠ” ë£¨íŠ¸ë…¸ë“œë¼ì„œ ë‹¨ìœ„í–‰ë ¬ì´ ë§ìŒ (ì™œëƒí•˜ë©´ ë£¨íŠ¸ë…¸ë“œì˜ ë¶€ëª¨ê°€ ì—†ìœ¼ë‹ˆê¹) */
 	memcpy(&m_TransformationMatrix, &pAINode->mTransformation, sizeof(_float4x4));
-	/* ÀÚ·áÇüÀÌ ´Ù¸£±â ¶§¹®¿¡ ´ëÀÔÀÌ ¾ÈµÊ ±×·¯³ª ¾È¿¡ µé¾îÀÖ´Â ÀÚ·áÇüÀº floatÀ¸·Î °°±â ¶§¹®¿¡ º¹»ç¸¦ ÀÌ¿ëÇØ ¸Ş¸ğ¸® Å©±â¸¸Å­ º¹»ç¸¦ ÁøÇà*/
+	/* ìë£Œí˜•ì´ ë‹¤ë¥´ê¸° ë•Œë¬¸ì— ëŒ€ì…ì´ ì•ˆë¨ ê·¸ëŸ¬ë‚˜ ì•ˆì— ë“¤ì–´ìˆëŠ” ìë£Œí˜•ì€ floatìœ¼ë¡œ ê°™ê¸° ë•Œë¬¸ì— ë³µì‚¬ë¥¼ ì´ìš©í•´ ë©”ëª¨ë¦¬ í¬ê¸°ë§Œí¼ ë³µì‚¬ë¥¼ ì§„í–‰*/
 
 	XMStoreFloat4x4(&m_TransformationMatrix, XMMatrixTranspose(XMLoadFloat4x4(&m_TransformationMatrix)));
-	/* ÀüÄ¡Çà·ÄÀ» ÇØÁÖ´Â ÀÌÀ¯´Â Assimp¿¡¼­ Çà·ÄÀº column ¿ì¼± Áï ¿­ ¿ì¼± ¹æ½ÄÀ¸·Î ÀúÀåÇÏ¹Ç·Î
-		_11, _21, _31, _41 ¼ø¼­·Î ÀúÀåµÈ´Ù ¿ì¸®´Â major ¿ì¼± ¹æ½ÄÀÌ¹Ç·Î  _11 , _12 , _13, _14 ·Î ¼ø¼­·Î ÀúÀåÇØ¾ß µÇ±â ¶§¹®¿¡
-		ÀüÄ¡Çà·ÄÀ» Àû¿ë½ÃÄ×´Ù.*/
+	/* ì „ì¹˜í–‰ë ¬ì„ í•´ì£¼ëŠ” ì´ìœ ëŠ” Assimpì—ì„œ í–‰ë ¬ì€ column ìš°ì„  ì¦‰ ì—´ ìš°ì„  ë°©ì‹ìœ¼ë¡œ ì €ì¥í•˜ë¯€ë¡œ
+		_11, _21, _31, _41 ìˆœì„œë¡œ ì €ì¥ëœë‹¤ ìš°ë¦¬ëŠ” major ìš°ì„  ë°©ì‹ì´ë¯€ë¡œ  _11 , _12 , _13, _14 ë¡œ ìˆœì„œë¡œ ì €ì¥í•´ì•¼ ë˜ê¸° ë•Œë¬¸ì—
+		ì „ì¹˜í–‰ë ¬ì„ ì ìš©ì‹œì¼°ë‹¤.*/
 
 	XMStoreFloat4x4(&m_CombinedTransformationMatrix, XMMatrixIdentity());
 
 	m_iParentBoneIndex = iParentBoneIndex;
 
-	/* ºÎ¸ğÀÇ Ã³À½ »À¸¦ ÀúÀåÇØ¾ß ÇÔ Áï ºí·£´õÀÇ edit ¸ğµåÀÏ¶§. */
+	/* ë¶€ëª¨ì˜ ì²˜ìŒ ë¼ˆë¥¼ ì €ì¥í•´ì•¼ í•¨ ì¦‰ ë¸”ëœë”ì˜ edit ëª¨ë“œì¼ë•Œ. */
 
-	/* Ã³À½ ºÎ¸ğ¿ÍÀÇ °Å¸® ÀúÀåÇØ³õÀÚ */
+	/* ì²˜ìŒ ë¶€ëª¨ì™€ì˜ ê±°ë¦¬ ì €ì¥í•´ë†“ì */
 
 
-	/* ±×·³ TÆ÷ÁîÀÏ ¶§ÀÇ »À ±âÁØÀ¸·Î Á¤ÇØ ³ö¾ß ÇÏ´Âµ¥. */
+	/* ê·¸ëŸ¼ Tí¬ì¦ˆì¼ ë•Œì˜ ë¼ˆ ê¸°ì¤€ìœ¼ë¡œ ì •í•´ ë†”ì•¼ í•˜ëŠ”ë°. */
 
 	return S_OK;
 }
@@ -53,14 +53,14 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 				XMStoreFloat4x4(&m_CombinedTransformationMatrix,
 					XMLoadFloat4x4(&m_TransformationMatrix) * XMLoadFloat4x4(&Bones[m_iParentBoneIndex]->m_CombinedTransformationMatrix));
 
-				// ÃÊ±â °Å¸® // 
+				// ì´ˆê¸° ê±°ë¦¬ // 
 				m_fDistanceWithParent = XMVectorGetX(XMVector3Length(XMLoadFloat4x4(&m_CombinedTransformationMatrix).r[3] - XMLoadFloat4x4(&Bones[m_iParentBoneIndex]->m_CombinedTransformationMatrix).r[3]));
 
-				/* ¿©±â°¡ º»°İÀûÀÎ °è»ê ÀÛ¾÷ */
+				/* ì—¬ê¸°ê°€ ë³¸ê²©ì ì¸ ê³„ì‚° ì‘ì—… */
 				XMStoreFloat4x4(&m_CombinedTransformationMatrix,
 					XMLoadFloat4x4(&m_TransformationMatrix) * XMLoadFloat4x4(&Bones[m_iParentBoneIndex]->m_CombinedTransformationMatrix));
 
-				/* ÃÊ±â */
+				/* ì´ˆê¸° */
 				XMStoreFloat4x4(&m_matrixFirstCombine, XMLoadFloat4x4(&m_CombinedTransformationMatrix));
 
 
@@ -68,9 +68,9 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 			}
 
 
-			XMStoreFloat4x4(&m_PreCombinedTransformationMatrix, XMLoadFloat4x4(&m_CombinedTransformationMatrix));	// ÀÌÀü ÄÄ¹ÙÀÎ ÀúÀå		
+			XMStoreFloat4x4(&m_PreCombinedTransformationMatrix, XMLoadFloat4x4(&m_CombinedTransformationMatrix));	// ì´ì „ ì»´ë°”ì¸ ì €ì¥		
 
-			/* ¿©±â°¡ º»°İÀûÀÎ °è»ê ÀÛ¾÷ */
+			/* ì—¬ê¸°ê°€ ë³¸ê²©ì ì¸ ê³„ì‚° ì‘ì—… */
 			XMStoreFloat4x4(&m_CombinedTransformationMatrix,
 				XMLoadFloat4x4(&m_TransformationMatrix) * XMLoadFloat4x4(&Bones[m_iParentBoneIndex]->m_CombinedTransformationMatrix));
 
@@ -82,7 +82,7 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 
 			XMVECTOR gravity = XMVectorSet(0.f, -9.8f, 0.f, 0.f);
 
-			/* Verlet ÀûºĞ */
+			/* Verlet ì ë¶„ */
 			_vector vNext = XMLoadFloat4x4(&m_matrixFirstCombine).r[3] + (XMLoadFloat4x4(&m_CombinedTransformationMatrix).r[3] - XMLoadFloat4x4(&m_matrixFirstCombine).r[3]) * 0.1f + gravity * fTimeDelta * fTimeDelta;// *fTimeDelta;	;	
 
 			_vector delta = vNext - XMLoadFloat4x4(&Bones[m_iParentBoneIndex]->m_CombinedTransformationMatrix).r[3];
@@ -101,7 +101,7 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 			m_matrixFirstCombine._44 = 1.f;
 			test.r[3] = vNext;
 
-			//¸ÁÅä°¡ ´Ã¾îÁö´Â °æ¿ì¸¦ ¾î¶»°ÔÇÏÁö..		
+			//ë§í† ê°€ ëŠ˜ì–´ì§€ëŠ” ê²½ìš°ë¥¼ ì–´ë–»ê²Œí•˜ì§€..		
 
 			XMStoreFloat4x4(&m_CombinedTransformationMatrix, test);
 
@@ -109,7 +109,7 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 		else
 		{
 
-			XMStoreFloat4x4(&m_PreCombinedTransformationMatrix, XMLoadFloat4x4(&m_CombinedTransformationMatrix));	// ÀÌÀü ÄÄ¹ÙÀÎ ÀúÀå	
+			XMStoreFloat4x4(&m_PreCombinedTransformationMatrix, XMLoadFloat4x4(&m_CombinedTransformationMatrix));	// ì´ì „ ì»´ë°”ì¸ ì €ì¥	
 
 			XMStoreFloat4x4(&m_CombinedTransformationMatrix,
 				XMLoadFloat4x4(&m_TransformationMatrix) * XMLoadFloat4x4(&Bones[m_iParentBoneIndex]->m_CombinedTransformationMatrix));
@@ -117,7 +117,7 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 		}
 	}
 
-	/* ·çÆ® ¸ğ¼Ç ¾Ö´Ï¸ŞÀÌ¼Ç ÀÌµ¿ Çà·Ä ÀúÀåÇÏ±â*/
+	/* ë£¨íŠ¸ ëª¨ì…˜ ì• ë‹ˆë©”ì´ì…˜ ì´ë™ í–‰ë ¬ ì €ì¥í•˜ê¸°*/
 	if (m_iParentBoneIndex == 1)
 	{
 
@@ -127,26 +127,25 @@ void CBone::Update_CombinedTransformationMatrix(const vector<class CBone*>& Bone
 			fabs(m_CombinedTransformationMatrix._42) < 1e-5f &&
 			fabs(m_CombinedTransformationMatrix._43) < 1e-5f)
 		{
-			// ´ÜÀ§ Çà·Ä·Î ÃÊ±âÈ­		
+			// ë‹¨ìœ„ í–‰ë ¬ë¡œ ì´ˆê¸°í™”		
 			XMStoreFloat4x4(&m_pPreRootMatrix, XMMatrixIdentity());
-
-			/* º¸°£ ¶§ ¹ß»ıÇÏ´Â ¹®Á¦ ÇØ°áÇØ¾ßÇÔ */
 		}
 
 
 		matrix.r[3] = XMVectorSubtract(XMLoadFloat4x4(&m_CombinedTransformationMatrix).r[3], XMLoadFloat4x4(&m_pPreRootMatrix).r[3]);
-		matrix.r[3] = XMVectorSetW(matrix.r[3], 1.f); // W °ªÀ» 1·Î °íÁ¤	
+		// ì´ì „ í”„ë ˆì„ì˜ ë£¨íŠ¸ ë³¸ ìœ„ì¹˜ì™€ í˜„ì¬ í”„ë ˆì„ì˜ ë£¨íŠ¸ ë³¸ ìœ„ì¹˜ì˜ ì°¨ì´ë¥¼ ê³„ì‚°í•˜ì—¬ í”„ë ˆì„ ê°„ ì´ë™ëŸ‰ì„ ê³„ì‚°.
+		matrix.r[3] = XMVectorSetW(matrix.r[3], 1.f); // ì´ë™ ë³€í™”ëŸ‰ì„ ì ìš© ì‹œì¼œì•¼ í•˜ë¯€ë¡œ W ê°’ì„ 1ë¡œ ê³ ì •		
 
 
-		// °á°ú¸¦ ÀúÀå
-		XMStoreFloat4x4(&m_RootMotionMatrix, matrix);
+		// ê²°ê³¼ë¥¼ ì €ì¥
+		XMStoreFloat4x4(&m_RootMotionMatrix, matrix);  // í•´ë‹¹ ì´ë™ëŸ‰ì„ ì €ì¥ 
 		XMStoreFloat4x4(&m_pPreRootMatrix, XMLoadFloat4x4(&m_CombinedTransformationMatrix));
 
 
-		m_CombinedTransformationMatrix._41 = 0.f;
-		m_CombinedTransformationMatrix._42 = 0.f;
-		m_CombinedTransformationMatrix._43 = 0.f;
-		m_CombinedTransformationMatrix._44 = 1.f;
+		m_CombinedTransformationMatrix._41 = 0.f; // Combined Matrixì˜ xê°’ ì´ˆê¸°í™”
+		m_CombinedTransformationMatrix._42 = 0.f; // Combined Matrixì˜ yê°’ ì´ˆê¸°í™”
+		m_CombinedTransformationMatrix._43 = 0.f; // Combined Matrixì˜ zê°’ ì´ˆê¸°í™”
+		m_CombinedTransformationMatrix._44 = 1.f; // Combined Matrixì˜ wê°’ 1 ì´ˆê¸°í™”
 
 	}
 
