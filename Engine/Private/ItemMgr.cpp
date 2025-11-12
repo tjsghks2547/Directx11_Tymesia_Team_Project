@@ -94,7 +94,7 @@ HRESULT CItemMgr::Drop_Item(ITEM_TYPE _eItemType, _fvector _vDropPosition, class
     }
     if (!strcmp(_GameObject->Get_Name(), "PLAYER"))
     {
-        m_lDropItem.push_back(_eItemType); // ¾Ë¸²¿ë ¹ö¸² ¾ÆÀÌÅÛ ÀúÀå 
+        m_lDropItem.push_back(_eItemType); // ì•Œë¦¼ìš© ë²„ë¦¼ ì•„ì´í…œ ì €ì¥ 
     }
 
     return S_OK;
@@ -144,8 +144,8 @@ void CItemMgr::Clear_ItemInfo()
     m_mapTakenItems.clear();
 
     // map<ITEM_TYPE, pair<_uint, vector<CItem*>>>
-    // map ÀÇ second °¡ pair °¡ µÇ°í... pairÀÇ first °¡ °¹¼ö ÀÚ³ª ¾êµµ ÃÊ±âÈ­.. 0°³·Î. Pair °¡ m_mapItems. °Á½Ã¹ß´«¿§°¡½Ã¿ëÀÓÀÌ°Å´Â ¤·¤·
-    // map À¸ second ÀÇ second °¡ pair ÀÇ second ´Ï±î. vector<CItem> ÀÌ´Ï±î.. ¾ê Å¬¸®¾î ÇØ¼­ ºñ¿ö¹úÈû;;
+    // map ì˜ second ê°€ pair ê°€ ë˜ê³ ... pairì˜ first ê°€ ê°¯ìˆ˜ ìë‚˜ ì–˜ë„ ì´ˆê¸°í™”.. 0ê°œë¡œ. Pair ê°€ m_mapItems. 
+    // map ì€ second ì˜ second ê°€ pair ì˜ second ë‹ˆê¹Œ. vector<CItem> ì´ë‹ˆê¹Œ.. ì–˜ í´ë¦¬ì–´ í•´ì„œ ë¹„ì›Œqë²„ë¦¼;;
     for (auto& Pair : m_mapItems)
     {
         ITEM_TYPE eItemType = Pair.first;
@@ -185,7 +185,7 @@ HRESULT CItemMgr::Acquire_Item(ITEM_TYPE _eItemType)
         iDropCount = pItems->Get_DropItemCount();
     }
 
-    m_lSaveItem.push_back(_eItemType);// ¾Ë¸²¿ë È¹µæ ¾ÆÀÌÅÛ ÀúÀå 
+    m_lSaveItem.push_back(_eItemType);// ì•Œë¦¼ìš© íšë“ ì•„ì´í…œ ì €ì¥ 
     m_mapItems[_eItemType].first += iDropCount;
 
 
@@ -200,7 +200,7 @@ _bool CItemMgr::Use_Item(ITEM_TYPE _eItemType, _uint iNum)
         {
             ItemBox.second.first -= iNum;
             if (0 >= ItemBox.second.first)
-                return true; // ÀÌ ¾ÆÀÌÅÛÀÌ 0°³°¡ µÇ¾ú´ÂÁö Ã¼Å©
+                return true; // ì´ ì•„ì´í…œì´ 0ê°œê°€ ë˜ì—ˆëŠ”ì§€ ì²´í¬
         }
     }
     return false;
