@@ -47,7 +47,16 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 ![Image](https://github.com/user-attachments/assets/0dc8b743-c306-41cf-8d62-478ee2a4c96b)
 
 - 다양한 셰이더 구현
-  - Zoom Blur / Color Inversion Shader / Dissolve / Glow
+  - Ditehring
+  <br><br>
+  ![Image](https://github.com/user-attachments/assets/5a2a2587-41d8-4df3-a665-f7b9d279afae)
+  - Zoom Blur
+  <br><br>
+  ![Image](https://github.com/user-attachments/assets/bc11080a-d524-4ab1-8f14-612b8cf95dbc)
+  -  Color Inversion Shader 
+  <br><br>
+  ![Image](https://github.com/user-attachments/assets/d80db297-4073-4042-b8e6-69ad323659c5)
+  - Dissolve / Glow
 
 - 플레이어 상태 디자인 패턴을 통한 컨트롤 구현
 
