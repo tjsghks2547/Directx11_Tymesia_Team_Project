@@ -62,11 +62,15 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 
 
 - 카메라 연출
-  - 카메라 툴 ( slerp 및 Cat-MullRom을 활용함) 
+  - Camera Bone을 활용한 컷신 구현
+    ![Image](https://github.com/user-attachments/assets/39738658-97a9-4512-a2b7-d645cdd46165)
+    <br><br>
   - Perlin Noise 를 이용한 Camera Shake 기능
     <br><br>
     ![Image](https://github.com/user-attachments/assets/229ca5ba-86f9-49f3-a9d6-2bc787e8b717)
   - Zoom In / Zoom Out
+    <br><br>
+    ![Image](https://github.com/user-attachments/assets/48ef232b-d152-491e-b8dd-6005f32f7718)
     
   - Lock On Camera <br><br>
   ![Image](https://github.com/user-attachments/assets/b00b6c60-c7c8-4e54-a02a-f62cb2ab09bb)
