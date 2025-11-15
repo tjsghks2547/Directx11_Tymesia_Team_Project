@@ -64,6 +64,8 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 - 카메라 연출
   - 카메라 툴 ( slerp 및 Cat-MullRom을 활용함) 
   - Perlin Noise 를 이용한 Camera Shake 기능
+    <br><br>
+    ![Image](https://github.com/user-attachments/assets/229ca5ba-86f9-49f3-a9d6-2bc787e8b717)
   - Zoom In / Zoom Out
     
   - Lock On Camera <br><br>
