@@ -36,8 +36,7 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
     📝https://seonhwan2547.tistory.com/36 ( Root Animation 구현 및 설계 코드 정리 )
    - 애니메이션 역재생
    - 애니메이션 키 프레임 구간 속도 조절 기능
-   - 애니메이션 전환 보간 속도 제어
-    <br><br>
+   - 애니메이션 전환 보간 속도 제어<br>
     📝https://seonhwan2547.tistory.com/37 ( Animation Lerp 구현 및 설계 코드 정리 )
    - 애니메이션 프레임 단위로 사운드, 이펙트, 충돌 등의 이벤트를 자동 트리거하는 프레임 기반 이벤트 시스템을 구현.
   <br><br>
