@@ -50,6 +50,7 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
   - Ditehring
   <br><br>
   ![Image](https://github.com/user-attachments/assets/5a2a2587-41d8-4df3-a665-f7b9d279afae)
+  <br><br>
   📝https://seonhwan2547.tistory.com/42 (Dithering 구현 및 설계 코드 정리 )
 
   - Zoom Blur
@@ -71,6 +72,8 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
   - Perlin Noise 를 이용한 Camera Shake 기능
     <br><br>
     ![Image](https://github.com/user-attachments/assets/229ca5ba-86f9-49f3-a9d6-2bc787e8b717)
+    <br><br>
+    📝https://seonhwan2547.tistory.com/40?category=1286192 (Perlin Noise 구현 및 설계 코드 정리)
   - Zoom In / Zoom Out
     <br><br>
     ![Image](https://github.com/user-attachments/assets/48ef232b-d152-491e-b8dd-6005f32f7718)
