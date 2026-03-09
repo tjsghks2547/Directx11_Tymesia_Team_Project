@@ -10,7 +10,7 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 </div>
 
 # 동영상
-[https://youtu.be/_r2ZWqVJgvA]
+[https://youtu.be/PLR6iCm_pm0]
 
 # 👩‍💻담당 파트
 - 김선환 : 플레이어, 카메라, 컷신 애니메이션 툴, 애니메이션, 엣지 네비게이션, 셰이더, 춛돌
