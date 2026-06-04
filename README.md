@@ -21,7 +21,7 @@ DirectX11을 활용한 팀 프로젝트 게임 모작에서 직접 구현한 기
 - 이종한 : 이펙트 , 이펙트 툴 , 이펙트 셰이더
   
 # 📖기술 스택 및 개발 환경
-- DirectX9 SDK
+- DirectX11 SDK
 - C++
 - ImGui
 - PhysX Library
